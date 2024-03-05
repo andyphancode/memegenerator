@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">&#9734 Meme &#9734 Generator &#9734 3000 &#9734</h1>
+    <div class="linebreak"></div>
+    <div class="formdiv">
+        <form action="">
+            <div class="form">
+                <label for="link">Img Link </label>
+                <input id="link" type="text" name="link" placeholder="Paste link here!">
+            </div>
+            <div class="form">
+                <label for="toptext">Top Text </label>
+                <input id="toptext" type="text" name="toptext" placeholder="Type top text here...">   
+            </div>
+            <div class="form">
+                <label for="bottomtext">Bot Text </label>
+            <input id="bottomtext" type="text" name="bottomtext" placeholder="Type bottom text here...">
+            </div>
+            <div class="form">
+                <label for="topfontsize">Top Text Size</label>
+                <input type="number" name="topfontsize" id="topfontsize" placeholder="px" min="48">
+                <label for="bottomfontsize">Bottom Text Size</label>
+                <input type="number" name="bottomfontsize" id="bottomfontsize" placeholder="px" min="48">
+            </div>
+            <div class="form">
+                <button id="generate">Generate!</button>
+                <button id="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="linebreak"></div>
+    <div id="memeBox">
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
